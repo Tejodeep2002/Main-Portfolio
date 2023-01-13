@@ -1,0 +1,43 @@
+@font-face{
+    font-family: "Hurricane";
+    src:url(../../Fonts/Hurricane.ttf);
+}
+
+.n-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.n-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 5rem;
+}
+
+.n-list{
+    padding: 0px;
+}
+
+.n-list>ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 0px;
+    
+}
+
+.n-list>ul>li{
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.n-logo{
+    font-family: "Hurricane";
+    font-size: 3.5rem;
+    position: relative;
+    left: 1rem;
+    top:-1rem;
+    margin-left: 1rem;
+}
