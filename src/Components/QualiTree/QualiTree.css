@@ -1,0 +1,51 @@
+.QualiTree{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.middlebar{
+    width: 0.1rem;
+    height: 6rem;
+    background-color: black;
+    position: relative;
+    border: 2px solid black;
+    top:3rem;
+}
+
+.left-QualiTree{
+    width: 15rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding:1rem;
+    transform: scale(0.8);
+    
+}
+.left-QualiTree> *{
+    background-color: var(--white);
+}
+
+.right-QualiTree{
+    width: 15rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding:1rem;
+    transform: scale(0.8);
+    position: relative;
+    top:6rem;
+    
+}
+
+.right-QualiTree>*{
+    background-color: var(--white);
+    
+}

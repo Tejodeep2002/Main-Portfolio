@@ -1,0 +1,72 @@
+.skillsbox {
+  width: 23rem;
+  height: 12rem;
+  padding: 1rem;
+  border: 4px solid black;
+  border-radius: 40px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.skillsbox-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  background-color: var(--white);
+  /* margin-top: 0.5rem; */
+}
+
+.skillsbox-head :nth-child(1){
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: var(--white);
+}
+
+.skills-sec {
+  position: relative;
+  width: 20rem;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--white);
+  justify-content: space-between;
+}
+
+.skills-sec-left {
+  position: relative;
+  width: 9rem;
+  margin-top: 1rem;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+
+.skills-sec-left :nth-child(1){
+    background: var(--white);
+    font-weight: bold;
+
+}
+
+.inner-bar {
+  height: 0.2rem;
+  border-radius: 30px;
+  z-index: 9;
+  position: relative;
+}
+
+.progress-bar{
+  width: 10rem;
+  height: 0.2rem;
+  background: var(--white);
+  border: 2px solid black;
+  border-radius: 30px;
+  
+}
+
+

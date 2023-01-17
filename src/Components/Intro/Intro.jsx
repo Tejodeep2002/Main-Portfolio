@@ -7,12 +7,12 @@ import "./Intro.css";
 
 const Intro = () => {
   return (
-    <div className="i-wrapper">
+    <div className="i-wrapper" id="home">
       <div className="i-left">
         <div className="socials">
-          <img src={LinkedIn}/>
-          <img src={Github}/>
-          <img src={Instagram}/>
+          <img src={LinkedIn} />
+          <img src={Github} />
+          <img src={Instagram} />
         </div>
         <div className="i-name">
           <span>HI I'm</span>
@@ -24,17 +24,14 @@ const Intro = () => {
             ever since the 1500s,
           </span>
 
-          
-            <div className="contactMeBox">
-              <span>Contact Me</span>
-            </div>
-          
+          <div className="contactMeBox">
+            <span>Contact Me</span>
+          </div>
         </div>
       </div>
 
       <div className="i-right">
-        <img src={ProfilePic}/>
-        
+        <img src={ProfilePic} />
       </div>
     </div>
   );

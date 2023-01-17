@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import profilePic from "../../images/Profile-pic.jpg";
 import Circle from "../Circle/Circle";
+import Resume from "../About/Resume.pdf";
 
 const About = () => {
   return (
@@ -29,7 +30,7 @@ const About = () => {
               </span>
             </div>
             <div className="downloadCv">
-              <span>Download CV</span>
+              <a href={Resume} target="_blank">Download CV</a>
             </div>
             <div className="blur b-blur1"></div>
           </div>

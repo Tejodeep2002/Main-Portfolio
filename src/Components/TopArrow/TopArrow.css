@@ -1,0 +1,25 @@
+.toparrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--violet);
+  position: fixed;
+
+  bottom: 2rem;
+  right: 2rem;
+  border: 4px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toparrow > * {
+  background-color: var(--violet);
+}
+
+.toparrow > a > img {
+  background-color: var(--violet);
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
