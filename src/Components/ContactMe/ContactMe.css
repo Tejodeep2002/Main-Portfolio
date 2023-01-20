@@ -1,0 +1,133 @@
+.contact-me{
+    display: relative;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cm-wrapper{
+    position: relative;
+    width:50rem;
+    height: 30rem;
+    border: 3px solid black;
+    border-radius: 50px;
+    display: flex;
+    padding:1rem;
+
+}
+
+.cm-middle{
+    position: relative;
+    width: 0.3rem;
+    height: 80%;
+    background: black;
+    top:3rem
+
+}
+
+.cm-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    padding: 2rem;
+}
+
+.contact-box{
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.5rem;
+    background: var(--white);
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box>:nth-child(1){
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+}
+
+.contact-box>:nth-child(1)>img{
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    font-weight: bold;
+}
+
+.contact-box>:nth-child(2){
+    font-size: 13px;
+    background: var(--white);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-box>:nth-child(2):hover{
+    color:var(--violet)
+}
+
+.cm-right{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap:2rem;
+}
+
+.cm-right>:nth-child(1){
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.cm-right>:nth-child(2){
+    width: 25rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--white);
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.cm-right>:nth-child(3){
+    width: 25rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--white);
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.cm-right>:nth-child(4){
+    width: 24rem;
+    height: 6rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--white);
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.cm-right>:nth-child(5){
+    width: 9rem;
+    height: 3rem;
+    background: var(--violet);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border:3px solid black;
+    border-radius: 50px;
+}

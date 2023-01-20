@@ -1,0 +1,83 @@
+.Swiper {
+  overflow: visible;
+}
+
+.p-slider {
+  width: 100%;
+  top: 2rem;
+}
+
+.p-main .swiper-slide {
+  width: 20rem;
+}
+
+.slide {
+  width: 19rem;
+  height: 11rem;
+  position: relative;
+}
+.slide img {
+  width: 19rem;
+  height: 11rem;
+  border-radius: 19px;
+  position: relative;
+}
+
+.hover-slide {
+  position: absolute;
+  width: 19rem;
+  height: 11rem;
+  border-radius: 19px;
+  background-color: black;
+  filter: opacity(0.8);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.slide:hover .hover-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-slide-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: black;
+  filter: opacity(0.8);
+  font-weight: bold;
+  color: var(--white);
+}
+.hover-slide-heading > * {
+  background: black;
+}
+
+.hover-slide-heading > :nth-child(1) {
+  font-size: 2rem;
+}
+
+.hover-slide-image > a > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.hover-slide-image {
+  position: relative;
+  top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: black;
+  filter: opacity(0.8);
+}
+
+.hover-slide-image > a {
+  background-color: black;
+  filter: opacity(0.8);
+}

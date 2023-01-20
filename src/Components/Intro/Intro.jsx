@@ -10,9 +10,9 @@ const Intro = () => {
     <div className="i-wrapper" id="home">
       <div className="i-left">
         <div className="socials">
-          <img src={LinkedIn} />
-          <img src={Github} />
-          <img src={Instagram} />
+          <a href="https://www.linkedin.com/in/tejodeep-mitra-roy/" target="_blank"><img src={LinkedIn} /></a>
+          <a href="https://github.com/Tejodeep2002" target="_blank"><img src={Github} /></a>
+          <a href="" target="_blank"><img src={Instagram} /></a>
         </div>
         <div className="i-name">
           <span>HI I'm</span>

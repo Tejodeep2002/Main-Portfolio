@@ -24,8 +24,8 @@
   align-items: center;
 }
 
-.a-heading > :nth-child(2) {
-  font-size: 0.8rem;
+.s-heading > :nth-child(2) {
+  font-size: 1rem;
 }
 
 .s-main{
