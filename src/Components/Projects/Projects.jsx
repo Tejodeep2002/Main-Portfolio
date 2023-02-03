@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import "./Projects.css";
 import project from "../../images/Projects/sidebar.png";
 import Atom from "../../images/Projects/atom.png";
@@ -7,6 +7,14 @@ import ProjectSlider1 from "../ProjectSlider1/ProjectSlider1";
 import ProjectSlider2 from "../ProjectSlider2/ProjectSlider2";
 
 const Projects = () => {
+  const [res,setRes] = useState()
+
+  setInterval(()=>{
+    setRes(window.innerWidth)
+  },1000)
+
+  console.log(window.innerWidth,window.innerHeight)
+  
   const projects = [
     {
       name: "Project1",
@@ -116,25 +124,21 @@ const Projects = () => {
       website:
         "https://tejodeep2002.github.io/Circular-Progress-Bar-with-pause-button/",
     },
-
   ];
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="p-wrapper">
         <div className="p-heading">
           <span>Recent Projects</span>
           <span>My Projects</span>
         </div>
         <div className="p-main">
-          {
-            (false)?
+          {res<500 ? (
             <ProjectSlider1 projects={projects} />
-            :
-            <ProjectSlider2 projects={projects}/>
-
-
-          }
+          ) : (
+            <ProjectSlider2 projects={projects} />
+          )}
           
         </div>
       </div>

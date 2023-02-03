@@ -8,74 +8,69 @@ import Github from "../../images/Github.png";
 import Website from "../../images/www.png";
 
 const ProjectSlider2 = ({ projects }) => {
-
-    const [count,setCount] = useState();
+  const [count, setCount] = useState();
   return (
     <>
       <Swiper
         slidesPerView={1}
-        
         pagination={{
           clickable: true,
         }}
-        modules={[ Pagination]}
+        modules={[Pagination]}
         className="p2-slider"
       >
-        
         <SwiperSlide>
           <div className="super-slider">
-            {projects.map((items, val) => (
-                val<6 ?
-              <div className="p2-slide">
-                <img src={items.image} alt="" />
-                <div className="hover-slide">
-                  <div className="hover-slide-heading">
-                    <span>{items.name}</span>
-                    <span>{items.desc}</span>
-                  </div>
+            {projects.map((items, val) =>
+              val < 6 ? (
+                <div className="p2-slide" key={val}>
+                  <img src={items.image} alt="" />
+                  <div className="hover-slide">
+                    <div className="hover-slide-heading">
+                      <span>{items.name}</span>
+                      <span>{items.desc}</span>
+                    </div>
 
-                  <div className="hover-slide-image">
-                    <a href={items.github} target="_blank">
-                      <img src={Github} alt="" />
-                    </a>
-                    <a href={items.website} target="_blank">
-                      <img src={Website} alt="" />
-                    </a>
+                    <div className="hover-slide-image">
+                      <a href={items.github} target="_blank">
+                        <img src={Github} alt="" />
+                      </a>
+                      <a href={items.website} target="_blank">
+                        <img src={Website} alt="" />
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div> :null
-            ))}
+              ) : null
+            )}
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="super-slider">
-            {projects.map((items, val) => (
-                val<6 ?
-              <div className="p2-slide">
-                <img src={items.image} alt="" />
-                <div className="hover-slide">
-                  <div className="hover-slide-heading">
-                    <span>{items.name}</span>
-                    <span>{items.desc}</span>
-                  </div>
+            {projects.map((items, val) =>
+              val < 6 ? (
+                <div className="p2-slide" key={val}>
+                  <img src={items.image} alt="" />
+                  <div className="hover-slide">
+                    <div className="hover-slide-heading">
+                      <span>{items.name}</span>
+                      <span>{items.desc}</span>
+                    </div>
 
-                  <div className="hover-slide-image">
-                    <a href={items.github} target="_blank">
-                      <img src={Github} alt="" />
-                    </a>
-                    <a href={items.website} target="_blank">
-                      <img src={Website} alt="" />
-                    </a>
+                    <div className="hover-slide-image">
+                      <a href={items.github} target="_blank">
+                        <img src={Github} alt="" />
+                      </a>
+                      <a href={items.website} target="_blank">
+                        <img src={Website} alt="" />
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div> :null
-            ))}
+              ) : null
+            )}
           </div>
         </SwiperSlide>
-        
-        
-        
-        
       </Swiper>
     </>
   );

@@ -1,44 +1,73 @@
-@font-face{
-    font-family: "Hurricane";
-    src:url(../../Fonts/Hurricane.ttf);
+@font-face {
+  font-family: "Hurricane";
+  src: url(../../Fonts/Hurricane.ttf);
 }
 
-.n-wrapper{
-    display: flex;
-    justify-content: space-between;
+.n-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.n-right{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-right: 5rem;
+.n-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 5rem;
 }
 
-.n-list{
-    padding: 0px;
+.n-list {
+  padding: 0px;
 }
 
-.n-list>ul{
-    display: flex;
-    gap: 3rem;
-    list-style: none;
-    margin: 0px;
-    
+.n-list > ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0px;
 }
 
-.n-list>ul>li{
-    font-weight: bold;
-    font-size: 1.5rem;
-    cursor: pointer;
-    
+.n-list > ul > li > a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: black;
 }
 
-.n-logo{
-    font-family: "Hurricane";
-    font-size: 3.5rem;
-    position: relative;
-    left: 1rem;
-    top:-1rem;
-    margin-left: 1rem;
+.n-list > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 0rem;
+  background-color: var(--violet);
+  border-radius: 50px;
+  top: 2rem;
+  left: 0rem;
+  display: none;
+
+  transition: 0.3s;
+}
+.n-list > ul > li:hover:after {
+  width: 95%;
+  display: flex;
+}
+
+.n-logo {
+  font-family: "Hurricane";
+  font-size: 3.5rem;
+  position: relative;
+  left: 1rem;
+  top: -1rem;
+  margin-left: 1rem;
+}
+
+
+@media screen and (max-width:450px){
+    .n-logo{
+      font-size: 3rem;
+      top: 1rem;
+    }
+    .n-list{
+        display: none;
+    }
 }

@@ -1,10 +1,11 @@
 .projects {
   position: relative;
-  height: 120vh;
-  top: 15rem;
+  height: 100vh;
+  top: 20rem;
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-bottom: 20rem;;
 }
 
 .p-wrapper {

@@ -1,22 +1,35 @@
 .toggle{
-    display: flex;
-    border: 3px solid var(--white);
-    border-radius: 1rem;
-    justify-content: space-between;
-    position: relative;
-    padding: 3px;
-    height: 1.5rem;
-    cursor:pointer;
+width: 3rem;
+  height: 3rem;
+  background-color: var(--violet);
+  position: fixed;
+  bottom: 7rem;
+  right: 2rem;
+  border: 4px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 7;
 }
 
 .toggle>*{
-    width: 1.5rem;
-    height:1.5rem;
-    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    
 }
 
-.t-button{
-    background:var(--violet);
-    border-radius: 100%;
-    position:absolute;
+@media screen and (max-width: 450px) {
+  .toggle {
+    transform: scale(0.9);
+  }
+  .toggle{
+ 
+      bottom: 5rem;
+      right: 1rem;
+     
+    }
 }
+
+

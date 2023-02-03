@@ -8,23 +8,23 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .skillsbox-head {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
+
   background-color: var(--white);
   /* margin-top: 0.5rem; */
 }
 
-.skillsbox-head :nth-child(1){
-    font-weight: bold;
-    font-size: 1.5rem;
-    background: var(--white);
+.skillsbox-head :nth-child(1) {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: var(--white);
 }
 
 .skills-sec {
@@ -44,13 +44,12 @@
   background: var(--white);
   display: flex;
   flex-direction: column;
-  gap:0.5rem;
+  gap: 0.5rem;
 }
 
-.skills-sec-left :nth-child(1){
-    background: var(--white);
-    font-weight: bold;
-
+.skills-sec-left :nth-child(1) {
+  background: var(--white);
+  font-weight: bold;
 }
 
 .inner-bar {
@@ -60,13 +59,16 @@
   position: relative;
 }
 
-.progress-bar{
+.progress-bar {
   width: 10rem;
   height: 0.2rem;
   background: var(--white);
   border: 2px solid black;
   border-radius: 30px;
-  
 }
 
-
+@media screen and (max-width: 450px) {
+  .skillsbox {
+    transform: scale(0.8);
+  }
+}

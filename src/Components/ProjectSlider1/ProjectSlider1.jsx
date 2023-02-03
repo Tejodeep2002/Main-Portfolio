@@ -16,7 +16,7 @@ const ProjectSlider1 = ({ projects }) => {
         className="p-slider"
       >
         {projects.map((items, val) => (
-          <SwiperSlide>
+          <SwiperSlide key={val}>
             <div className="slide">
               <img src={items.image} alt="" />
               <div className="hover-slide">

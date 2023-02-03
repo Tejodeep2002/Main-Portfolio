@@ -3,13 +3,15 @@
   position: relative;
   top: 9rem;
   height: 77vh;
+  justify-content: center;
+  gap: 4rem;
 }
 
-.i-left {
+/* .i-left {
   display: flex;
   gap: 4rem;
   margin-left: 8rem;
-}
+} */
 .socials {
   display: flex;
   flex-direction: column;
@@ -21,13 +23,14 @@
   padding: 1.8rem 1rem;
   gap: 1rem;
   background-color: white;
+  margin-left: -2rem;
 }
 
-.socials>a{
+.socials > a {
   background-color: white;
 }
 
-.socials >a> img {
+.socials > a > img {
   width: 2.3rem;
   height: 2.3rem;
   background-color: white;
@@ -36,6 +39,7 @@
 .i-name {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .i-name > :nth-child(1) {
@@ -71,22 +75,27 @@
   background-color: var(--violet);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   cursor: pointer;
-}
-
-.contactMeBox > * {
   font-size: 2rem;
   font-weight: bolder;
   color: white;
-
   background-color: var(--violet);
+}
+
+.contactMeBox:hover {
+  background-color: var(--white);
+  color: var(--violet);
+}
+
+.contactMeBox > :nth-child(1):hover {
+  background-color: var(--white);
+  color: var(--violet);
 }
 
 .i-right > img {
   position: relative;
   width: 20rem;
   height: 20rem;
-  margin-right: 10rem;
-  margin-left: 10rem;
+
   border: 4px solid black;
   border-radius: 50%;
   animation: profile_border 8s ease-in-out infinite 1s;
@@ -103,5 +112,48 @@
 
   100% {
     border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .i-wrapper {
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 1rem;
+    height: 90vh;
+    top: 0rem;
+  }
+  .socials {
+    transform: scale(0.75);
+    top: 3rem;
+    margin-left: 1rem;
+  }
+  .i-name {
+    transform: scale(0.8);
+    width: 100%;
+  }
+
+  .i-name > :nth-child(1) {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .i-name > :nth-child(2) {
+    font-weight: bold;
+    font-size: 2.6rem;
+  }
+
+  .i-right {
+    transform: scale(0.6);
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+  }
+  .contactMeBox {
+
+    margin-top:4rem;
+
+    font-size: 2rem;
+
   }
 }

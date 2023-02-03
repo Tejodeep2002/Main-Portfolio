@@ -4,34 +4,69 @@ import Github from "../../images/Github.png";
 import Instagram from "../../images/Instagram.png";
 import ProfilePic from "../../images/Profile-pic.jpg";
 import "./Intro.css";
+import { themeContext } from "../../Context";
+import { useContext } from "react";
+import Typewriter from "typewriter-effect";
+import { NaturePeopleSharp } from "@mui/icons-material";
 
 const Intro = () => {
-  return (
-    <div className="i-wrapper" id="home">
-      <div className="i-left">
-        <div className="socials">
-          <a href="https://www.linkedin.com/in/tejodeep-mitra-roy/" target="_blank"><img src={LinkedIn} /></a>
-          <a href="https://github.com/Tejodeep2002" target="_blank"><img src={Github} /></a>
-          <a href="" target="_blank"><img src={Instagram} /></a>
-        </div>
-        <div className="i-name">
-          <span>HI I'm</span>
-          <span>Tejodeep Mitra Roy</span>
-          <span>Frontend Developer</span>
-          <span>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
-          </span>
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
-          <div className="contactMeBox">
-            <span>Contact Me</span>
-          </div>
-        </div>
+  return (
+    <div className="i-wrapper">
+      <div className="socials">
+        <a
+          href="https://www.linkedin.com/in/tejodeep-mitra-roy/"
+          target="_blank"
+        >
+          <img src={LinkedIn} />
+        </a>
+        <a href="https://github.com/Tejodeep2002" target="_blank">
+          <img src={Github} />
+        </a>
+        <a href="" target="_blank">
+          <img src={Instagram} />
+        </a>
+      </div>
+      <div className="i-name">
+        <span>HI I'm</span>
+        <span>Tejodeep Mitra Roy</span>
+        <Typewriter
+          options={{
+            strings: ["Frontend Developer", "UX Designer", "Video Editor"],
+            autoStart: true,
+            loop: true,
+            delay: "natural",
+          }}
+        />
+        <span>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s,
+        </span>
+
+        <span
+          className="contactMeBox"
+          style={
+            darkMode
+              ? { borderColor: "var(--white)" }
+              : { borderColor: "black" }
+          }
+        >
+          Contact Me
+        </span>
       </div>
 
       <div className="i-right">
-        <img src={ProfilePic} />
+        <img
+          src={ProfilePic}
+          style={
+            darkMode
+              ? { borderColor: "var(--white)" }
+              : { borderColor: "black" }
+          }
+        />
       </div>
     </div>
   );

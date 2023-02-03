@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="f-icons">
-        <img src={Linkedin} alt=""/>
-        <img src={Facebook} alt=""/>
-        <img src={Instagram2} alt=""/>
+        <a href="" target="_blank"><img src={Linkedin} alt=""/></a>
+        <a href="" target="_blank"><img src={Facebook} alt=""/></a>
+        <a href="" target="_blank"><img src={Instagram2} alt=""/></a>
       </div>
 
       <span>tejodeepmitraroy2002@gmail.com</span>

@@ -22,7 +22,7 @@ const Skills = () => {
     { language: "Github & Git", progress: 6 },
   ];
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="s-wrapper">
         <div className="s-heading">
           <span>Skills</span>

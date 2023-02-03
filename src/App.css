@@ -1,19 +1,21 @@
-
-:root{
-  --violet: #5703C1;
-  --grey: #D9D9D9;
-  --white: #FFFFFF;
-  --black: #000000;
-  --blue: #2778C2;
-
+:root {
+  --violet: #5703c1;
+  --grey: #d9d9d9;
+  --white: #ffffff;
+  --black: #1a1a1a;
+  --blue: #2778c2;
+  --green:  #009900;
+  --sky:#00e6e6;
 }
 
-*{
+.App {
+  padding: 1.5rem;
   background-color: var(--grey);
+  position: relative;
 }
 
-
-.App{
-  padding:1.5rem;
-
+@media screen and (max-width:450px){
+  .App{
+    padding: 0.5rem 1rem;
+  }
 }

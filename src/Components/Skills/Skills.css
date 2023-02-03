@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .s-heading {
   display: flex;
@@ -17,7 +16,7 @@
 }
 
 .s-heading > :nth-child(1) {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   position: relative;
   justify-content: center;
@@ -28,18 +27,18 @@
   font-size: 1rem;
 }
 
-.s-main{
-   display: flex;
-   flex-wrap: wrap;
-   position: relative;
-   top:1rem;
-   width: 60rem;
-   justify-content: space-evenly;
-   gap:2rem
+.s-main {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 1rem;
+  width: 60rem;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 
-.s-main>*{
-    margin-top: 2rem;
+.s-main > * {
+  margin-top: 2rem;
 }
 
 .b-blur2 {
@@ -50,12 +49,73 @@
   height: 15rem;
 }
 
-.b-blur3{
+.b-blur3 {
   background: var(--blue);
   left: 15rem;
   bottom: 10rem;
   filter: blur(60px);
   width: 12rem;
   height: 12rem;
+}
+
+@media screen and (max-width: 450px) {
+  .skills {
+    height: 80vh;
+    top: 10rem;
+    /* width: 90%; */
+  }
+  .s-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .s-main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    width: 100%;
+  }
+
+  .s-main > * {
+    margin-top: 0rem;
+  }
+  .b-blur3 {
+  background: var(--blue);
+  left: 8rem;
+  bottom: 10rem;
+  filter: blur(60px);
+  width: 12rem;
+  height: 12rem;
+}
+
+.b-blur2 {
+  background: var(--violet);
+  left: 1rem;
+  top:4rem;
+  filter: blur(95px);
+  width: 15rem;
+  height: 15rem;
+}
+
+.b-blur3 {
+  background: var(--blue);
+  right: 1rem;
+  bottom: -1rem;
+  filter: blur(60px);
+  width: 12rem;
+  height: 12rem;
+}
+
+.s-heading > :nth-child(1) {
+  font-size: 2.5rem;
+
+}
+
+.s-heading > :nth-child(2) {
+  font-size: 1rem;
+}
+
 
 }

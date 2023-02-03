@@ -1,3 +1,4 @@
+
 .Swiper {
   overflow: visible;
 }
@@ -8,7 +9,7 @@
 }
 
 .p-main .swiper-slide {
-  width: 20rem;
+  width: 10rem;
 }
 
 .slide {
@@ -25,10 +26,11 @@
 
 .hover-slide {
   position: absolute;
+  position: relative;
   width: 19rem;
   height: 11rem;
   border-radius: 19px;
-  background-color: black;
+  background-color: red;
   filter: opacity(0.8);
   top: 0;
   left: 0;
@@ -65,6 +67,7 @@
   height: 2.5rem;
   cursor: pointer;
   border: 2px solid white;
+  background-color: var(--white);
 }
 
 .hover-slide-image {
@@ -73,7 +76,6 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  background-color: black;
   filter: opacity(0.8);
 }
 
