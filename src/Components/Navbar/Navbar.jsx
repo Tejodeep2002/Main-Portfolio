@@ -8,7 +8,6 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  
 
   return (
     <div className="n-wrapper">
