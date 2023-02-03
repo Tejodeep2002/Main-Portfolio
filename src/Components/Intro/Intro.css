@@ -55,7 +55,8 @@
 .i-name > :nth-child(4) {
   position: relative;
   top: 2rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .contactMeBox {

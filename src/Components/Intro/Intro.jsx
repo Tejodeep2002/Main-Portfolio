@@ -41,9 +41,8 @@ const Intro = () => {
           }}
         />
         <span>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
+          Hi, I'm Tejodeep Mitra Roy, a skilled web developer with a passion for
+          creating dynamic and user-friendly websites.👋👋
         </span>
 
         <span
