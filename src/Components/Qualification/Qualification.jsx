@@ -50,7 +50,7 @@ const Qualification = () => {
                 selectToggle
                   ? null
                   : darkMode
-                  ? { backgroundColor: "var(--white)", color: "black" }
+                  ? { backgroundColor: "var(--white)", color: "black" ,fontWeight:"bold"}
                   : { backgroundColor: "var(--white)" }
               }
             >
@@ -67,7 +67,7 @@ const Qualification = () => {
               style={
                 selectToggle
                   ? darkMode
-                    ? { backgroundColor: "var(--white)", color: "black" }
+                    ? { backgroundColor: "var(--white)", color: "black",fontWeight:"bold" }
                     : { backgroundColor: "var(--white)" }
                   : null
               }

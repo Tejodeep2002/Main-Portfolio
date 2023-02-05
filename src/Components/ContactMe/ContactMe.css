@@ -136,7 +136,7 @@
   color: var(--violet);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .contact-me {
     transform: scale(0.4);
     height: 40vh;

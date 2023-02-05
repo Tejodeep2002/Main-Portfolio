@@ -112,12 +112,14 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+
+/* Midscreen smart phones */
+@media screen and (max-width: 500px) {
   .i-wrapper {
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
-    height: 80vh;
+    height: 75vh;
     top: 0rem;
   }
   .socials {
@@ -155,3 +157,49 @@
     font-size: 2rem;
   }
 }
+
+/* Small screen phones */
+@media screen and (max-width: 375px) {
+  .i-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 80vh;
+    top: 0rem;
+  }
+  .socials {
+    transform: scale(0.75);
+    top: 0rem;
+    left: 3rem;
+  }
+  .i-name {
+    transform: scale(0.8);
+    width: 100%;
+    bottom:2.5rem;
+  }
+
+  .i-name > :nth-child(1) {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  .i-name > :nth-child(2) {
+    font-weight: bold;
+    font-size: 2.2rem;
+  }
+
+  .i-right {
+    transform: scale(0.55);
+    position: absolute;
+    top: -4rem;
+    right: -3rem;
+  }
+  .i-right > img {
+    border: 5px solid black;
+  }
+  .contactMeBox {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+}
+

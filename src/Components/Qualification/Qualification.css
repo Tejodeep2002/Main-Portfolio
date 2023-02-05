@@ -132,8 +132,35 @@
   height: 15rem;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
   .qualification {
     transform: scale(0.6);
+  }
+
+  .b-blur4{
+    background: var(--white);
+    /* right: 12rem; */
+    bottom:9rem;
+    filter: blur(95px);
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .b-blur5{
+    background: var(--violet);
+    left: 10rem;
+    top: 10rem;
+    filter: blur(120px);
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  .b-blur6{
+    background: var(--sky);
+    right: 12rem;
+    bottom:9rem;
+    filter: blur(120px);
+    width: 15rem;
+    height: 15rem;
   }
 }

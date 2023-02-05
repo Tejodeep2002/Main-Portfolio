@@ -32,9 +32,11 @@
   color: var(--white);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .footer {
     height: 15rem;
+    width: 100%;
+
   }
   .f-icons {
     transform: scale(0.8);
