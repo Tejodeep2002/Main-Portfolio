@@ -60,11 +60,10 @@
 
 @media screen and (max-width: 500px) {
   .skills {
-    height: 80vh;
-    top: 10rem;
-    /* width: 90%; */
+    height: 100vh;
+    top: -12rem;
   }
-  .s-wrapper{
+  .s-wrapper {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -82,40 +81,95 @@
     margin-top: 0rem;
   }
   .b-blur3 {
-  background: var(--blue);
-  left: 8rem;
-  bottom: 10rem;
-  filter: blur(60px);
-  width: 12rem;
-  height: 12rem;
+    background: var(--blue);
+    left: 8rem;
+    bottom: 10rem;
+    filter: blur(60px);
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .b-blur2 {
+    background: var(--violet);
+    left: 1rem;
+    top: 4rem;
+    filter: blur(130px);
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .b-blur3 {
+    background: var(--blue);
+    right: 1rem;
+    bottom: -1rem;
+    filter: blur(90px);
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .s-heading > :nth-child(1) {
+    font-size: 2.5rem;
+  }
+
+  .s-heading > :nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
-.b-blur2 {
-  background: var(--violet);
-  left: 1rem;
-  top:4rem;
-  filter: blur(130px);
-  width: 15rem;
-  height: 15rem;
-}
+@media screen and (max-width: 375px) {
+  .skills {
+    height: 100vh;
+    top: -5rem;
+  }
+  .s-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .s-main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    width: 100%;
+  }
 
-.b-blur3 {
-  background: var(--blue);
-  right: 1rem;
-  bottom: -1rem;
-  filter: blur(90px);
-  width: 12rem;
-  height: 12rem;
-}
+  .s-main > * {
+    margin-top: 0rem;
+  }
+  .b-blur3 {
+    background: var(--blue);
+    left: 8rem;
+    bottom: 10rem;
+    filter: blur(60px);
+    width: 12rem;
+    height: 12rem;
+  }
 
-.s-heading > :nth-child(1) {
-  font-size: 2.5rem;
+  .b-blur2 {
+    background: var(--violet);
+    left: 1rem;
+    top: 4rem;
+    filter: blur(130px);
+    width: 15rem;
+    height: 15rem;
+  }
 
-}
+  .b-blur3 {
+    background: var(--blue);
+    right: 1rem;
+    bottom: -1rem;
+    filter: blur(90px);
+    width: 12rem;
+    height: 12rem;
+  }
 
-.s-heading > :nth-child(2) {
-  font-size: 1rem;
-}
+  .s-heading > :nth-child(1) {
+    font-size: 2.4rem;
+  }
 
-
+  .s-heading > :nth-child(2) {
+    font-size: 1rem;
+  }
 }

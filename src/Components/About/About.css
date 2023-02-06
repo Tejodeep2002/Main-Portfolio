@@ -126,8 +126,8 @@
 @media screen and (max-width: 500px) {
   .a-wrapper {
     transform: scale(0.4);
-    top: 6rem;
-    height: 60vh;
+    top: -6rem;
+    height: 100vh;
 
   }
   .a-heading > :nth-child(1) {
@@ -150,7 +150,7 @@
     display: flex;
     flex-direction: column;
     width: 50rem;
-    height: 35rem;
+    height: 37rem;
     gap: 2rem;
     
   }
@@ -158,17 +158,23 @@
     font-weight: bold;
     font-size: 1.3rem;
   }
+  .downloadCv {
+    width: 11rem;
+    height: 3.5rem;
+    border: 3px solid black;
+    border-radius: 30px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .a-wrapper {
     transform: scale(0.4);
-    top: 6rem;
-    height: 60vh;
-  
+    top: -5rem;
+    height: 100vh;
+
   }
   .a-heading > :nth-child(1) {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     position: relative;
     justify-content: center;
@@ -176,7 +182,7 @@
   }
 
   .a-heading > :nth-child(2) {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .about {
@@ -187,8 +193,20 @@
     display: flex;
     flex-direction: column;
     width: 50rem;
-    height: 35rem;
+    height: 37rem;
     gap: 2rem;
     
   }
+  .a-about {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .downloadCv {
+    width: 11rem;
+    height: 3.5rem;
+    border: 3px solid black;
+    border-radius: 30px;
+  }
+
 }

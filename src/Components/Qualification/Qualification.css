@@ -11,16 +11,15 @@
   width: 40rem;
   height: 30rem;
   padding: 1rem;
-  border: 3px solid black;
+  border: 4px solid black;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
-
 
 .q-heading {
   position: relative;
@@ -52,7 +51,7 @@
   /* width: 15rem; */
   display: flex;
   justify-content: space-between;
-  
+
   gap: 2rem;
   font-size: 1.4rem;
   /* border: 2px solid black; */
@@ -100,67 +99,225 @@
   background: var(--white);
 }
 
-.q-tree{
+.q-tree {
   position: relative;
   top: 3rem;
 }
 
-.b-blur4{
+.b-blur4 {
   background: var(--white);
   /* right: 12rem; */
-  bottom:9rem;
+  bottom: 9rem;
   filter: blur(95px);
   width: 15rem;
   height: 15rem;
+  
 }
 
-.b-blur5{
+.b-blur5 {
   background: var(--violet);
   left: 10rem;
   top: 10rem;
-  filter: blur(60px);
-  width: 15rem;
-  height: 15rem;
-}
-
-.b-blur6{
-  background: var(--sky);
-  right: 12rem;
-  bottom:9rem;
   filter: blur(95px);
   width: 15rem;
   height: 15rem;
+  
 }
 
-@media screen and (max-width: 500px){
+.b-blur6 {
+  background: var(--sky);
+  right: 12rem;
+  bottom: 9rem;
+  filter: blur(95px);
+  width: 15rem;
+  height: 15rem;
+  
+}
+
+@media screen and (max-width: 500px) {
   .qualification {
     transform: scale(0.6);
+    height: 100vh;
+    top: -10rem;
   }
 
-  .b-blur4{
+  .b-blur4 {
     background: var(--white);
-    /* right: 12rem; */
-    bottom:9rem;
+    bottom: 9rem;
     filter: blur(95px);
     width: 15rem;
     height: 15rem;
+    z-index: -1;
   }
 
-  .b-blur5{
+  .b-blur5 {
     background: var(--violet);
     left: 10rem;
     top: 10rem;
     filter: blur(120px);
     width: 15rem;
     height: 15rem;
+    z-index: -1;
   }
-  
-  .b-blur6{
+
+  .b-blur6 {
     background: var(--sky);
     right: 12rem;
-    bottom:9rem;
+    bottom: 9rem;
     filter: blur(120px);
     width: 15rem;
     height: 15rem;
+    z-index: -1;
   }
+
+  .q-heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .q-heading > :nth-child(1) {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .q-heading > :nth-child(2) {
+    font-size: 1rem;
+    
+  }
+  .q-wrapper {
+    gap: 2rem;
+  }
+  .q-section {
+    transform: scale(1.3);
+    font-weight: bold;
+    gap:2rem
+
+  }
+  .q-section > :nth-child(1) {
+    margin-left: 0.5rem;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    top: 0.4rem;
+    left: 0.5rem;
+  }
+  
+  .q-section > :nth-child(1) img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+  }
+  
+  .q-section > :nth-child(2) {
+    margin-left: 0.5rem;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    top: 0.4rem;
+  }
+  
+  .q-section > :nth-child(2) img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  .qualification {
+    transform: scale(0.57);
+    height: 100vh;
+    top: 0rem;
+  }
+
+  .b-blur4 {
+    background: var(--white);
+    /* right: 12rem; */
+    bottom: 9rem;
+    filter: blur(95px);
+    width: 15rem;
+    height: 15rem;
+    z-index: -1;
+  }
+
+  .b-blur5 {
+    background: var(--violet);
+    left: 10rem;
+    top: 10rem;
+    filter: blur(120px);
+    width: 15rem;
+    height: 15rem;
+    z-index: -1;
+  }
+
+  .b-blur6 {
+    background: var(--sky);
+    right: 12rem;
+    bottom: 9rem;
+    filter: blur(120px);
+    width: 15rem;
+    height: 15rem;
+    z-index: -1;
+  }
+
+  .q-heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .q-heading > :nth-child(1) {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .q-heading > :nth-child(2) {
+    font-size: 1.5rem;
+  }
+  .q-wrapper {
+    gap: 2rem;
+  }
+  .q-section {
+    transform: scale(1.3);
+    font-weight: bold;
+  }
+  .q-section > :nth-child(1) {
+    margin-left: 0.5rem;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    top: 0.4rem;
+    left: 0.5rem;
+  }
+  
+  .q-section > :nth-child(1) img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+  }
+  
+  .q-section > :nth-child(2) {
+    margin-left: 0.5rem;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    top: 0.4rem;
+  }
+  
+  .q-section > :nth-child(2) img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+  }
+  
 }
