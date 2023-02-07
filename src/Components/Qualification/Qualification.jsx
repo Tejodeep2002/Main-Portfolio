@@ -84,7 +84,7 @@ const Qualification = () => {
               className="sec-toggle"
               style={
                 selectToggle
-                  ? { marginLeft: "11.5rem" }
+                  ? { marginLeft: "11.4rem" }
                   : { marginLeft: "0rem" }
               }
             ></div>

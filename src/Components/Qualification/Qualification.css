@@ -319,5 +319,15 @@
     height: 25px;
     margin-right: 0.5rem;
   }
+
+  .sec-toggle {
+    
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 11rem;
+    height: 2.2rem;
+    margin-left: 0rem;
+    background: var(--white);
+  }
   
 }

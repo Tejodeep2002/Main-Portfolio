@@ -19,7 +19,7 @@ const SkillsBox = ({ heading, language }) => {
             <div className="progress-bar">
               <div
                 className="inner-bar"
-                style={{ width: `${items.progress}rem`,background: 'red' }}
+                style={{ width: `${items.progress}rem`,background: 'var(--violet)' }}
               ></div>
             </div>
           </div>

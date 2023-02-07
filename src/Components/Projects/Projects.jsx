@@ -1,7 +1,9 @@
 import React, { useEffect,useState } from "react";
 import "./Projects.css";
 import project from "../../images/Projects/sidebar.png";
-import Atom from "../../images/Projects/atom.png";
+import project1 from "../../images/Projects/project1.jpg";
+import project2 from "../../images/Projects/project2.jpg";
+
 
 import ProjectSlider1 from "../ProjectSlider1/ProjectSlider1";
 import ProjectSlider2 from "../ProjectSlider2/ProjectSlider2";
@@ -17,18 +19,18 @@ const Projects = () => {
   
   const projects = [
     {
-      name: "Project1",
+      name: "UrlShortner-123",
       desc: "dadadadadad",
-      image: project,
+      image: project1,
       github:
-        "https://github.com/Tejodeep2002/Circular-Progress-Bar-with-pause-button",
+        "https://github.com/Tejodeep2002/UrlShortner-123",
       website:
-        "https://tejodeep2002.github.io/Circular-Progress-Bar-with-pause-button/",
+        "https://tejodeep2002.github.io/UrlShortner-123/",
     },
     {
-      name: "Project2",
+      name: "Circular Progress Bar",
       desc: "dadadadadad",
-      image: project,
+      image: project2,
       github:
         "https://github.com/Tejodeep2002/Circular-Progress-Bar-with-pause-button",
       website:
