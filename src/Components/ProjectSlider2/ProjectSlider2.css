@@ -54,7 +54,7 @@
   align-items: center;
   gap: 0.5rem;
   background: black;
-  filter: opacity(0.8);
+  filter: opacity(1);
   font-weight: bold;
   color: var(--white);
 }
@@ -63,7 +63,7 @@
 }
 
 .hover-slide-heading > :nth-child(1) {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hover-slide-image {
@@ -76,7 +76,7 @@
 
 .hover-slide-image > a {
   background-color: black; 
-  filter: opacity(0.8);
+  filter: opacity(1);
 } 
 
 .hover-slide-image img {

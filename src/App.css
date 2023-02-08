@@ -14,7 +14,13 @@
   position: relative;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:500px){
+  .App{
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media screen and (max-width:375px){
   .App{
     padding: 0.5rem 1rem;
   }

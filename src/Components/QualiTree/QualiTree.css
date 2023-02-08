@@ -48,6 +48,23 @@
 }
 
 @media screen and (max-width: 500px) {
+  .QualiTree {
+
+    font-size: 1.4rem;
+  }
+  .left-QualiTree {
+    border: 3px solid black;
+  }
+
+  .right-QualiTree {
+    border: 3px solid black;
+  }
+}
+@media screen and (max-width: 375px) {
+  .QualiTree {
+
+    font-size: 1.3rem;
+  }
   .left-QualiTree {
     border: 3px solid black;
   }
