@@ -40,8 +40,7 @@ const About = () => {
               {/* <Circle number={23} text={"years"}/> */}
             </div>
             <div className="a-about">
-              <span>Lorem Ipsum is simply dummy text of the printing and </span>
-              <span>
+              <span>Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the
               </span>
