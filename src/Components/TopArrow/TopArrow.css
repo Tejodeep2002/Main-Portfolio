@@ -23,7 +23,18 @@
   width: 25px;
   height: 25px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+  .toparrow {
+    transform: scale(0.9);
+  }
+  .toparrow {
+    bottom: 12rem;
+    right: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
   .toparrow {
     transform: scale(0.9);
   }

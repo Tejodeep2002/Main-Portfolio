@@ -41,8 +41,7 @@
     position: relative;
     height: 40vh;
     top: -13rem;
-
-    /* margin-bottom: 2rem; */
+    margin-bottom: 0rem;
   }
 
   .p-wrapper {
@@ -56,8 +55,9 @@
 @media screen and (max-width: 375px) {
   .projects {
     position: relative;
-    height: 40vh;
+    height: 50vh;
     top: 2rem;
+    margin-bottom: 0rem;
   }
 
   .p-wrapper {

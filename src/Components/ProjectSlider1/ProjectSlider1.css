@@ -87,13 +87,15 @@
 
 @media screen and (max-width: 500px){
   .p-slider {
-    width: 80%;
+    width: 90%;
+    transform: scale(0.9);
     
   }
 }
 @media screen and (max-width: 375px){
   .p-slider {
     width: 90%;
+    transform: scale(0.9);
     
   }
 }

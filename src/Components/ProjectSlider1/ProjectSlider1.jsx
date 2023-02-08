@@ -10,7 +10,7 @@ const ProjectSlider1 = ({ projects }) => {
   return (
     <>
       <Swiper
-        spaceBetween={10}
+        spaceBetween={5}
         slidesPerView={1}
         grabCursor={true}
         className="p-slider"

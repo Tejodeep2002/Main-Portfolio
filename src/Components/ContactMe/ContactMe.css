@@ -139,7 +139,117 @@
 @media screen and (max-width: 500px) {
   .contact-me {
     transform: scale(0.4);
-    height: 40vh;
-    top: 0rem;
+    height: 80vh;
+    position: relative;
+    top: -14rem;
   }
+
+  .contact-box {
+    transform: scale(1.1);
+  }
+  .cm-wrapper {
+    position: relative;
+    width: 50rem;
+    height: 35rem;
+  }
+
+  .cm-right > :nth-child(1) {
+    font-weight: bold;
+    font-size: 3.8rem;
+  }
+
+  .cm-right {
+    gap: 1rem;
+  }
+
+  .cm-right > form {
+ 
+    gap: 1.5rem;
+  }
+  
+
+  .user {
+    width: 25rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--white);
+    padding-left: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .message {
+    width: 24rem;
+    height: 6rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--white);
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .button {
+    transform: scale(1.3);
+    margin-top:1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-me {
+    /* transform: scale(0.6); */
+    height: 70vh;
+    position: relative;
+    top: 5rem;
+  }
+
+  .contact-box {
+    transform: scale(1.1);
+  }
+  .cm-wrapper {
+    position: relative;
+    width: 50rem;
+    height: 35rem;
+  }
+
+  .cm-right > :nth-child(1) {
+    font-weight: bold;
+    font-size: 3.8rem;
+  }
+
+  .cm-right {
+    gap: 1rem;
+  }
+
+  .cm-right > form {
+ 
+    gap: 1.5rem;
+  }
+  
+
+  .user {
+    width: 25rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--white);
+    padding-left: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .message {
+    width: 24rem;
+    height: 6rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--white);
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .button {
+    transform: scale(1.3);
+    margin-top:1.5rem;
+  }
+
+  
 }

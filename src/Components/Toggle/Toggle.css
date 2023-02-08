@@ -1,5 +1,5 @@
-.toggle{
-width: 3rem;
+.toggle {
+  width: 3rem;
   height: 3rem;
   background-color: var(--violet);
   position: fixed;
@@ -14,22 +14,26 @@ width: 3rem;
   z-index: 7;
 }
 
-.toggle>*{
-    width: 2rem;
-    height: 2rem;
-    
+.toggle > * {
+  width: 2rem;
+  height: 2rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .toggle {
     transform: scale(0.9);
   }
-  .toggle{
- 
-      bottom: 5rem;
-      right: 1rem;
-     
-    }
+  .toggle {
+    bottom: 16rem;
+    right: 1rem;
+  }
 }
-
-
+@media screen and (max-width: 375px) {
+  .toggle {
+    transform: scale(0.9);
+  }
+  .toggle {
+    bottom: 5rem;
+    right: 1rem;
+  }
+}

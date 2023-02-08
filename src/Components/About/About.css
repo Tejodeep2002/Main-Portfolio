@@ -159,10 +159,11 @@
     font-size: 1.3rem;
   }
   .downloadCv {
-    width: 11rem;
+    /* width: 11rem;
     height: 3.5rem;
     border: 3px solid black;
-    border-radius: 30px;
+    border-radius: 30px; */
+    transform: scale(1.2);
   }
 }
 
@@ -203,10 +204,7 @@
   }
 
   .downloadCv {
-    width: 11rem;
-    height: 3.5rem;
-    border: 3px solid black;
-    border-radius: 30px;
+   transform: scale(1.2);
   }
 
 }

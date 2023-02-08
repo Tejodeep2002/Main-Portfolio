@@ -33,9 +33,26 @@
 }
 
 @media screen and (max-width: 500px) {
+  .footer{
+    position: absolute;
+    bottom: 10rem;
+  width: 102%;
+  height: 15rem;
+  }
+  .f-icons {
+    transform: scale(0.8);
+  }
+  .footer > :nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .footer {
-    height: 15rem;
+    position: absolute;
+    height: 35vh;
     width: 102%;
+    margin: 0rem -1.5rem;
 
   }
   .f-icons {
@@ -45,3 +62,5 @@
     font-size: 1rem;
   }
 }
+
+
