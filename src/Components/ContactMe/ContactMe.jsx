@@ -8,6 +8,9 @@ import { useContext } from "react";
 const ContactMe = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [text,setText] = useState("");
   const form = useRef();
   const [done, setDone] = useState(false);
   const sendEmail = (e) => {
@@ -66,7 +69,10 @@ const ContactMe = () => {
           <span>Contact Me</span>
 
           {done ? (
-            <span style={{ fontSize: "2rem", fontWeight: "bold" }}>
+            <span
+              style={{ fontSize: "2rem", fontWeight: "bold" }}
+              className="sendMsg"
+            >
               Thanks For Contact
             </span>
           ) : (
@@ -76,17 +82,20 @@ const ContactMe = () => {
                 name="user_name"
                 className="user"
                 placeholder="Name"
+                onChange={(e)=>setName(e.target.value)}
               />
               <input
                 type="email"
                 name="user_email"
                 className="user"
                 placeholder="E-mail"
+                onChange={(e)=>setEmail(e.target.value)}
               />
               <textarea
                 name="message"
                 className="message"
                 placeholder="Message"
+                onChange={(e)=>setText(e.target.value)}
               />
               <input
                 type="submit"
