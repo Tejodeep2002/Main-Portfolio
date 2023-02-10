@@ -8,6 +8,7 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import Typewriter from "typewriter-effect";
 import { NaturePeopleSharp } from "@mui/icons-material";
+import { Link } from "react-scroll";
 
 const Intro = () => {
   const theme = useContext(themeContext);
@@ -45,8 +46,11 @@ const Intro = () => {
           creating dynamic and user-friendly websites.👋👋
         </span>
 
-        <span
-          className="contactMeBox"
+        <Link
+        spy={true}
+        to="contact"
+        smooth={true}
+        className="contactMeBox"
           style={
             darkMode
               ? { borderColor: "var(--white)" }
@@ -54,7 +58,7 @@ const Intro = () => {
           }
         >
           Contact Me
-        </span>
+        </Link>
       </div>
 
       <div className="i-right">
