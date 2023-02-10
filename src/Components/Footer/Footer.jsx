@@ -19,7 +19,9 @@ const Footer = () => {
             <img src={Instagram2} alt="" />
           </a>
         </div>
-        <span>tejodeepmitraroy2002@gmail.com</span>
+        <span>Copyright 2023 All right reserved </span>
+        <span> This website is Depeloped by Tejodeep Mitra Roy</span>
+
       </div>
     </div>
   );

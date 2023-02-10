@@ -38,6 +38,11 @@
   font-size: 1.2rem;
   color: var(--white);
 }
+.f-wrapper > :nth-child(3) {
+  background: var(--violet);
+  font-size: 1rem;
+  color: var(--white);
+}
 
 @media screen and (max-width: 500px) {
   .footer {
@@ -50,8 +55,16 @@
   .f-icons {
     transform: scale(0.8);
   }
-  .footer > :nth-child(2) {
+ 
+  .f-wrapper > :nth-child(2) {
+    background: var(--violet);
     font-size: 1rem;
+    color: var(--white);
+  }
+  .f-wrapper > :nth-child(3) {
+    background: var(--violet);
+    font-size: 1rem;
+    color: var(--white);
   }
 }
 
@@ -69,7 +82,14 @@
   .f-icons {
     transform: scale(0.8);
   }
-  .footer > :nth-child(2) {
+  .f-wrapper > :nth-child(2) {
+    background: var(--violet);
     font-size: 1rem;
+    color: var(--white);
+  }
+  .f-wrapper > :nth-child(3) {
+    background: var(--violet);
+    font-size: 0.9rem;
+    color: var(--white);
   }
 }
