@@ -40,9 +40,12 @@ const About = () => {
               {/* <Circle number={23} text={"years"}/> */}
             </div>
             <div className="a-about">
-              <span>Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the
+              <span>
+                Hi there! My name is Tejodeep Mitra Roy, and I am a frontend
+                developer with a focus on React JS. I am passionate about
+                creating visually appealing and user-friendly websites and
+                applications. With 1 years of experience in the field, I have a
+                strong understanding of React JS and its related technologies. 
               </span>
             </div>
             <div
