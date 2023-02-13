@@ -50,7 +50,11 @@ const Qualification = () => {
                 selectToggle
                   ? null
                   : darkMode
-                  ? { backgroundColor: "var(--white)", color: "black" ,fontWeight:"bold"}
+                  ? {
+                      backgroundColor: "var(--white)",
+                      color: "black",
+                      fontWeight: "bold",
+                    }
                   : { backgroundColor: "var(--white)" }
               }
             >
@@ -67,7 +71,11 @@ const Qualification = () => {
               style={
                 selectToggle
                   ? darkMode
-                    ? { backgroundColor: "var(--white)", color: "black",fontWeight:"bold" }
+                    ? {
+                        backgroundColor: "var(--white)",
+                        color: "black",
+                        fontWeight: "bold",
+                      }
                     : { backgroundColor: "var(--white)" }
                   : null
               }
@@ -84,7 +92,9 @@ const Qualification = () => {
               className="sec-toggle"
               style={
                 selectToggle
-                  ? { marginLeft: "10.8rem" }
+                  ? window.innerWidth < 500
+                    ? { marginLeft: "10.8rem" }
+                    : { marginLeft: "11.4rem" }
                   : { marginLeft: "0rem" }
               }
             ></div>
