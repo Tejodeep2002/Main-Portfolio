@@ -7,6 +7,16 @@
   --green:  #009900;
   --sky:#00e6e6;
 }
+@font-face{
+  font-family: 'Montserrat';
+  src: url(../src/Fonts/Montserrat.ttf);
+}
+*{
+  font-family: 'Montserrat';
+}
+body{
+  margin: 0px;
+}
 
 .App {
   padding: 1.5rem;

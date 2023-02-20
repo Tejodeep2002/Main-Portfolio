@@ -1,11 +1,19 @@
 .skills {
   height: 100vh;
   position: relative;
-  top: 10rem;
+  top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.s-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:2rem;
+}
+
 .s-heading {
   display: flex;
   flex-direction: column;
@@ -27,7 +35,7 @@
   font-size: 1rem;
 }
 
-.s-main {
+/* .s-main {
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -39,6 +47,35 @@
 
 .s-main > * {
   margin-top: 2rem;
+} */
+
+.s-main {
+  border: 3px solid black;
+  border-radius: 50px;
+  width: 48rem;
+  height: 28rem;
+  top: 4rem;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.mini-images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  gap:-1rem;
+
+}
+
+.mini-images> img{
+  /* width: 5rem;
+  height:5rem; */
 }
 
 .b-blur2 {
