@@ -62,7 +62,6 @@ const Skills = () => {
           {skills.map((items,value) => 
             <div className="mini-images" keys={value}>
               <img src={items} />
-              
             </div>
           )
           }

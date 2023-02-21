@@ -1,7 +1,7 @@
 .qualification {
   height: 90vh;
   position: relative;
-  top: 7rem;
+  top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,8 +137,8 @@
 @media screen and (max-width: 500px) {
   .qualification {
     transform: scale(0.6);
-    height: 100vh;
-    top: -10rem;
+    height: 80vh;
+    top: -27rem;
   }
 
   .b-blur4 {
@@ -191,6 +191,7 @@
   }
   .q-wrapper {
     gap: 2rem;
+    height: 30rem;
   }
   .q-section {
     transform: scale(1.3);
@@ -241,8 +242,9 @@
 @media screen and (max-width: 375px) {
   .qualification {
     transform: scale(0.57);
-    height: 100vh;
-    top: 0rem;
+    height: 60vh;
+    top: -8rem;
+    
   }
 
   .b-blur4 {

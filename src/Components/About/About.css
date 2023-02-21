@@ -126,8 +126,8 @@
 @media screen and (max-width: 500px) {
   .a-wrapper {
     transform: scale(0.4);
-    top: -6rem;
-    height: 100vh;
+    top: -13rem;
+    height: 90vh;
 
   }
   .a-heading > :nth-child(1) {
@@ -179,7 +179,7 @@
 @media screen and (max-width: 375px) {
   .a-wrapper {
     transform: scale(0.4);
-    top: -5rem;
+    top: -7rem;
     height: 100vh;
 
   }
