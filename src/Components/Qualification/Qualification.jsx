@@ -92,9 +92,7 @@ const Qualification = () => {
               className="sec-toggle"
               style={
                 selectToggle
-                  ? window.innerWidth < 500
-                    ? { marginLeft: "10.8rem" }
-                    : { marginLeft: "11.4rem" }
+                  ? { marginLeft: "11.5rem" }
                   : { marginLeft: "0rem" }
               }
             ></div>
