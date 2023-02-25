@@ -18,7 +18,7 @@ const QualiTree = ({ qualification }) => {
           ) : null
         )}
 
-        <div className="middlebar" style={darkMode ? {"backgroundColor":"var(--white)"}:{"backgroundColor":"black"}}></div>
+        <div className="middlebar"></div>
         {qualification.map((items, val) =>
           val % 2 !== 0 ? (
             items.name === "" ? (

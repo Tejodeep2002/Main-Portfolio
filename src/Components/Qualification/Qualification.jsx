@@ -32,10 +32,10 @@ const Qualification = () => {
       <div
         className="q-wrapper"
         style={
-          darkMode ? { borderColor: "var(--white)" } : { borderColor: "black" }
+          darkMode ? { borderColor: "var(--white)",background:"var(--black)" } : { borderColor: "black" }
         }
       >
-        <div className="q-heading">
+        <div className="q-heading"  >
           <span>Qualification</span>
           <span>My personal journey</span>
         </div>
@@ -52,16 +52,18 @@ const Qualification = () => {
                   : darkMode
                   ? {
                       backgroundColor: "var(--white)",
-                      color: "black",
-                      fontWeight: "bold",
+                      color: "var(--white)",
                     }
-                  : { backgroundColor: "var(--white)" }
+                  : { backgroundColor: "var(--violet)", 
+                    color: "var(--white)",
+                    
+                }
               }
             >
               <img
                 src={EduIcon}
                 style={
-                  selectToggle ? null : { backgroundColor: "var(--white)" }
+                  selectToggle ? null : { backgroundColor: "var(--violet)" }
                 }
               />
               Education
@@ -72,18 +74,19 @@ const Qualification = () => {
                 selectToggle
                   ? darkMode
                     ? {
-                        backgroundColor: "var(--white)",
-                        color: "black",
-                        fontWeight: "bold",
+                        backgroundColor: "background: var(--violet)",
+                        color: "var(--white)",
+                        
                       }
-                    : { backgroundColor: "var(--white)" }
+                    : { backgroundColor: "background: var(--violet)",
+                        color:"var(--white)" }
                   : null
               }
             >
               <img
                 src={ProfessIcon}
                 style={
-                  selectToggle ? { backgroundColor: "var(--white)" } : null
+                  selectToggle ? { backgroundColor: "background: var(--violet)" } : null
                 }
               />
               Experience
@@ -106,7 +109,7 @@ const Qualification = () => {
           </div>
         </div>
       </div>
-      <div className="blur b-blur4"></div>
+      {/* <div className="blur b-blur4"></div> */}
       <div className="blur b-blur5"></div>
       <div className="blur b-blur6"></div>
     </div>

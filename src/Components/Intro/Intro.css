@@ -76,12 +76,27 @@
   font-weight: bolder;
   color: white;
   background-color: var(--violet);
+  
+
 }
 
 .contactMeBox:hover {
   background-color: var(--white);
   color: var(--violet);
+  animation-name:contactani;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease;
+
 }
+
+
+
+@keyframes contactani{
+  
+  100% { transform: scale(1.2);}
+}
+
 
 .contactMeBox > :nth-child(1):hover {
   background-color: var(--white);

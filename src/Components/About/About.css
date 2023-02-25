@@ -97,6 +97,10 @@
 .downloadCv:hover {
   background-color: var(--white);
   color: black;
+  animation-name:contactani;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease;
 }
 
 .downloadCv > * {
