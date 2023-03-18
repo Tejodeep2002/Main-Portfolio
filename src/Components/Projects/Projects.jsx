@@ -1,8 +1,9 @@
 import React, { useEffect,useState } from "react";
 import "./Projects.css";
-import project from "../../images/Projects/sidebar.png";
 import project1 from "../../images/Projects/project1.jpg";
 import project2 from "../../images/Projects/project2.jpg";
+import project3 from "../../images/Projects/project3.jpg";
+
 
 
 import ProjectSlider1 from "../ProjectSlider1/ProjectSlider1";
@@ -20,7 +21,7 @@ const Projects = () => {
   const projects = [
     {
       name: "UrlShortner-123",
-      desc: "dadadadadad",
+      desc: "This site makes big links convert into short links",
       image: project1,
       github:
         "https://github.com/Tejodeep2002/UrlShortner-123",
@@ -29,12 +30,21 @@ const Projects = () => {
     },
     {
       name: "Circular Progress Bar",
-      desc: "dadadadadad",
+      desc: "This is a Pause and play circular bar",
       image: project2,
       github:
         "https://github.com/Tejodeep2002/Circular-Progress-Bar-with-pause-button",
       website:
         "https://tejodeep2002.github.io/Circular-Progress-Bar-with-pause-button/",
+    },
+    {
+      name: "Weather App",
+      desc: "Now,You can know your current weather ",
+      image: project3,
+      github:
+        "https://github.com/Tejodeep2002/Weather-app-using-React",
+      website:
+        "https://tejodeep2002.github.io/Weather-app-using-React/",
     },
     
   ];

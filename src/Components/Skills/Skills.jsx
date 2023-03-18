@@ -45,7 +45,7 @@ const Skills = () => {
     Bootstrap,
     C,
     Cplus,
-    node
+    node,
   ];
 
   return (
@@ -59,17 +59,11 @@ const Skills = () => {
           {/* <SkillsBox heading={"Frontend Development"} language={frontEnd} />
           <SkillsBox heading={"Backend Development"} language={backend} />
           <SkillsBox heading={"Others Tools"} language={designing} /> */}
-          {skills.map((items,value) => 
+          {skills.map((items, value) => (
             <div className="mini-images" keys={value}>
               <img src={items} />
             </div>
-          )
-          }
-
-          <div className="mini-images">
-            <img src={skills[1]} />
-            <span>HTML</span>
-          </div>
+          ))}
         </div>
       </div>
       {/* <div className="blur b-blur2"></div>
